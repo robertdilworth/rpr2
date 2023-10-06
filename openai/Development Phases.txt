@@ -1,0 +1,49 @@
+Phase 1: Project Setup and Authentication
+Initialize the Backend
+
+Set up Django project and create a new app for user authentication.
+Configure the database (likely PostgreSQL for production).
+Initialize the Frontend
+
+Create a React app using Create React App or a template.
+Set up project structure, including folders for components, assets, etc.
+User Authentication
+
+Implement basic registration and login using Django.
+Add Google OAuth for alternative login and registration.
+Implement email verification for new users.
+Phase 2: UI/UX and Frontend Features
+Design the Header
+
+Implement a header with placeholders for the logo and profile image.
+Main Page Design
+
+Center the placeholder text 'RPR' on the main page.
+Login and Registration Pages
+
+Design and implement aesthetically pleasing login and registration pages.
+Phase 3: Subscription and Payment System
+Subscription Plans
+
+Design the layout for Bronze, Silver, and Gold plans.
+Implement Stripe API for payment.
+Failed Payment and Renewal
+
+Implement logic for dealing with failed payments and renewals.
+Phase 4: Testing and Deployment
+Unit Testing
+
+Write unit tests for the backend and frontend features.
+Deployment
+
+Prepare the app for deployment to a Debian 12 server.
+Set up server configurations, including the database and web server.
+Phase 5: Future Work
+Analytics & Portfolio Management
+
+Features will be decided later but could include portfolio models, Yahoo Finance integration, and portfolio optimization.
+Additional Security Measures
+
+Implement features like two-factor authentication.
+You can use VSCode for development; it's a solid choice for both Django and React development. 
+You already have a Debian 12 server for production, which is excellent for running a Django app securely and efficiently.

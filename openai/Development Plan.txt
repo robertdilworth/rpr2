@@ -1,0 +1,27 @@
+Revised Development Plan
+
+Phase 1: Planning & Wireframing
+Wireframes for login, registration, and landing pages.
+
+Phase 2: Backend Setup & Authentication
+Set up Django project, database schema.
+Implement basic authentication features: login, registration, email verification.
+
+Phase 3: Frontend Skeleton with React
+Develop a basic layout in React based on wireframes, including placeholders.
+
+Phase 4: Stripe & Subscription Handling
+Integrate Stripe into the React frontend and Django backend.
+Implement backend logic for failed payments and reminders.
+
+Phase 5: User Experience
+Refine the UI for the login, registration, and landing pages using React components.
+
+Phase 6: Testing & Debugging
+Rigorous testing of all implemented features.
+
+Phase 7: Deployment
+Deploy the Django backend and React frontend to a production environment.
+
+Phase 8: Analytics & Advanced Features (Future Scope)
+Implement advanced analytics and portfolio management features.

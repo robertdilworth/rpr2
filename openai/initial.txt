@@ -1,0 +1,14 @@
+Please play the part of software developer and ask me questions so that you have the necessary information to determine requirements and how to build the app that I would like.  
+I am a portfolio manager and I want to build a web based app that will be used for portfolio construction, analysis and management.  
+But first I want to focus on a bare bones then develop from there.  
+For bare bones, I want to have a header, with a placeholder for my logo on the left, and on the right text that says either Login or Logout depending, 
+and to the right of that a placeholder for my profile image.  the profile image will contain links to settings etc.  
+The main page can be blank for now, and maybe just have simple placeholder text of 'RPR' centered both horizontally and vertically.   
+When I click on Login, I want a page to open under the header that to have a header of "Login" centered and below that email address, and below that password, and below that a button to "Login".   
+Below that I would like a button that allows login with Google.  and below that a link  that says 'Register" which will take you to a new page to allow you to register.  
+I want the Login page to look nice.   I want the registration page to have a similar appearance to the Login page. 
+As well, I want to use google to send a verification email to the person signing up.  
+After they sign up and verify their email. I want them to be taken to a page that offers 3 different offers - Bronze, Silver, Gold.  Each one will have a monthly subscription price attached to it. 
+They will need to buy a package, then they will have access to the services offered.  This will use stripe as the payment system attached. 
+
+After you have asked me a series of questions to comprehend the system to be developed, please write out a summary of the app and the requirements needed, and then a process to develop.

@@ -1,0 +1,62 @@
+Application Summary
+The web-based application aims to serve as a comprehensive platform for portfolio construction, analysis, and management. The application is intended for financial planners, portfolio managers, and individual investors who want to utilize robust tools for asset allocation and portfolio performance evaluation.
+
+Technology Stack
+Backend: Django
+Frontend: React
+Database: SQL (as part of Django)
+Payment Gateway: Stripe
+
+Core Features
+Authentication:
+Users can register via an email & password or Google OAuth.
+Email verification through Google for new registrations.
+
+User Interface:
+A header bar containing a placeholder for a company logo and user profile.
+Main landing page with minimal placeholder text "RPR."
+
+Subscription Plans:
+Three tier-based subscription plans: Bronze, Silver, Gold.
+Monthly auto-renewable payments via Stripe.
+
+Analytics and Portfolio Management (Future Scope):
+Assemble portfolio models and perform quantitative analysis.
+Data pulled from Yahoo Finance for historical price analytics.
+Portfolio optimization through mean-variance analysis.
+
+Other Features:
+Password reset functionality.
+GST Tax handling (since the company will be based in Ontario, Canada).
+
+
+Detailed Requirements
+User Authentication
+Secure email and password-based registration and login.
+Email verification system.
+
+Frontend UI
+Header bar with logo placeholder and user profile.
+Main page with central placeholder text.
+
+Subscription Plans
+Bronze, Silver, Gold plans with respective services.
+Pricing: $49/month, $79/month, $99/month.
+
+Payment System
+Stripe integration for payment processing.
+Handle failed payments via email reminders.
+
+User Experience
+Well-designed, aesthetically pleasing login and registration pages.
+
+Analytics & Portfolio Management (Future Scope)
+Ability to create portfolio models.
+Analytics based on data from Yahoo Finance.
+
+Tax and Payment
+GST handling for Canadian clients.
+Post-Login Experience
+
+A generic landing page with a sidebar for future features.
+The application starts as a 'bare-bones' structure and is designed for incremental improvements and added functionalities.
