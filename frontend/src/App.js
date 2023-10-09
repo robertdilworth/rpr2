@@ -7,6 +7,8 @@ import Header from './Header';
 import Pricing from './Pricing';  // Import the Pricing component
 import SignIn from './SignIn';  // Import the SignIn component
 import SignUp from './SignUp';  // Make sure the path is correct
+import ForgotPassword from './ForgotPassword';  // Import the new component
+
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
               <Route path="/login" element={<SignIn />} />  {/* Display Sign-In template on /login */}
               <Route path="/register" element={<Register />} />
               <Route path="/signup" element={<SignUp />} />
+              <Route path="/forgot-password" element={<ForgotPassword />} />
+
               {/* Add more routes here */}
             </Routes>
           </main>

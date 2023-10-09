@@ -17,8 +17,11 @@ const theme = createTheme({
   },
 });
 
-const root = createRoot(document.getElementById('root'));  // Updated this line
-root.render(
+// Updated this block
+const root = document.getElementById('root');
+const appRoot = createRoot(root);  // Updated this line
+
+appRoot.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <App />
