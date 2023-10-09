@@ -1,17 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';  // Updated this line
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ThemeProvider } from '@mui/material/styles';  // Add this line
-import theme from './theme';  // Add this line, make sure the path is correct
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Create a theme instance.
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#1976d2',
+    },
+    secondary: {
+      main: '#f44336',
+    },
+  },
+});
+
+const root = createRoot(document.getElementById('root'));  // Updated this line
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>  {/* Add this line */}
+    <ThemeProvider theme={theme}>
       <App />
-    </ThemeProvider>  {/* Add this line */}
+    </ThemeProvider>
   </React.StrictMode>
 );
 

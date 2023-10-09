@@ -1,36 +1,28 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
-import Login from './Login';
 import Register from './Register';
-import { Container, Typography, AppBar, Toolbar, Button } from '@mui/material';
+import { Container } from '@mui/material';
+import Header from './Header';
+import Pricing from './Pricing';  // Import the Pricing component
+import SignIn from './SignIn';  // Import the SignIn component
+import SignUp from './SignUp';  // Make sure the path is correct
+
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <AppBar position="static">
-          <Toolbar>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              My Portfolio Manager
-            </Typography>
-            <Button color="inherit">
-              <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>Home</Link>
-            </Button>
-            <Button color="inherit">
-              <Link to="/login" style={{ textDecoration: 'none', color: 'white' }}>Login</Link>
-            </Button>
-            <Button color="inherit">
-              <Link to="/register" style={{ textDecoration: 'none', color: 'white' }}>Register</Link>
-            </Button>
-          </Toolbar>
-        </AppBar>
+        <Header />
         <Container>
           <main>
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/login" element={<Login />} />
+              <Route path="/" element={<Pricing />} />  {/* Display Pricing template by default */}
+              <Route path="/home" element={<Home />} />  {/* Moved Home to /home */}
+              <Route path="/login" element={<SignIn />} />  {/* Display Sign-In template on /login */}
               <Route path="/register" element={<Register />} />
+              <Route path="/signup" element={<SignUp />} />
+              {/* Add more routes here */}
             </Routes>
           </main>
         </Container>
@@ -40,4 +32,3 @@ function App() {
 }
 
 export default App;
-
